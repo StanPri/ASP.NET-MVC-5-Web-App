@@ -29,5 +29,7 @@ namespace ASP.NET_MVC_5_Web_App.Models.DB
         public virtual DbSet<SYSUser> SYSUsers { get; set; }
         public virtual DbSet<SYSUserProfile> SYSUserProfiles { get; set; }
         public virtual DbSet<SYSUserRole> SYSUserRoles { get; set; }
+
+        public System.Data.Entity.DbSet<ASP.NET_MVC_5_Web_App.Models.ViewModel.UserSignUpView> UserSignUpViews { get; set; }
     }
 }

@@ -74,5 +74,27 @@ namespace ASP.NET_MVC_5_Web_App.Models.EntityManager
                     return string.Empty;
             }
         }
+
+        public bool IsUserInRole(string loginName, string roleName)
+        {
+            using (AspNetMVCDBEntities db = new AspNetMVCDBEntities())
+            {
+                SYSUser SU = db.SYSUsers.Where(o => o.LoginName.ToLower().Equals(loginName))?.FirstOrDefault();
+                if (SU != null)
+                {
+                    var roles = from q in db.SYSUserRoles
+                                join r in db.LOOKUPRoles on q.LOOKUPRoleID equals r.LOOKUPRoleID
+                                where r.RoleName.Equals(roleName) && q.SYSUserID.Equals(SU.SYSUserID)
+                                select r.RoleName;
+
+                    if (roles != null)
+                    {
+                        return roles.Any();
+                    }
+                }
+
+                return false;
+            }
+        }
     }
 }

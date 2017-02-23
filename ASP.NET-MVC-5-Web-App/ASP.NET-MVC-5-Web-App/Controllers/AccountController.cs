@@ -66,5 +66,12 @@ namespace ASP.NET_MVC_5_Web_App.Controllers
             // If we got this far, something failed, redisplay form  
             return View(ULV);
         }
+
+        [Authorize]
+        public ActionResult SignOut()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Index", "Home");
+        }
     }
 }

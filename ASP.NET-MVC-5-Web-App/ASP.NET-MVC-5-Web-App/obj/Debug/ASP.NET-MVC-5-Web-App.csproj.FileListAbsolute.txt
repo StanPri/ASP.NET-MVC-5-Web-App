@@ -42,3 +42,4 @@ C:\Temp\ASP.NET-MVC-5-Web-App\ASP.NET-MVC-5-Web-App\ASP.NET-MVC-5-Web-App\bin\Sy
 C:\Temp\ASP.NET-MVC-5-Web-App\ASP.NET-MVC-5-Web-App\ASP.NET-MVC-5-Web-App\bin\System.Web.Mvc.xml
 C:\Temp\ASP.NET-MVC-5-Web-App\ASP.NET-MVC-5-Web-App\ASP.NET-MVC-5-Web-App\obj\Debug\ASP.NET-MVC-5-Web-App.dll
 C:\Temp\ASP.NET-MVC-5-Web-App\ASP.NET-MVC-5-Web-App\ASP.NET-MVC-5-Web-App\obj\Debug\ASP.NET-MVC-5-Web-App.pdb
+C:\Temp\ASP.NET-MVC-5-Web-App\ASP.NET-MVC-5-Web-App\ASP.NET-MVC-5-Web-App\obj\Debug\ASP.NET-MVC-5-Web-App.csprojResolveAssemblyReference.cache
